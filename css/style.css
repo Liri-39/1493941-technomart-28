@@ -1,0 +1,116 @@
+body {
+    background-color: #F2F2F2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* */
+header {}
+
+header .header-top {
+    background-color: #293449;
+}
+
+header .header-top .container {}
+
+header .header-top-logo {
+    width: 220px;
+    background-color: #EE3643;
+}
+
+header .header-top-logo svg {
+    margin: 0 auto;
+}
+
+header path {}
+
+header .header-top-search {}
+
+header .header-top-bookmark {}
+
+header .header-top-bookmark span {}
+
+header .header-top-basket {}
+
+header .header-top-basket span {}
+
+header .header-top-order-go {}
+
+header .container {}
+
+header .header-middle {}
+
+header .header-middle-description {}
+
+header br {}
+
+header .header-middle-phone {}
+
+header .header-middle-adress {}
+
+header .login {}
+
+header .registration {}
+
+header .header-nav {
+    background-color: #32425C;
+}
+
+header nav {}
+
+header ul {}
+
+header li {}
+
+/* */
+main {
+    background-color: #FFFFFF;
+}
+
+main .category {}
+
+main .category .container {}
+
+main .goods {}
+
+main .goods .container {}
+
+main .brands {}
+
+main .brands .container {}
+
+main .services {}
+
+main .services .container {
+    background-color: #F2F2F2;
+}
+
+main .delivery {}
+
+main .delivery .container {}
+
+/**/
+footer {}
+
+footer .footer-up {
+    margin: 0;
+    padding: 0;
+    background-color: #32425C;
+
+}
+
+footer .footer-up .container {}
+
+footer .footer-bottom {
+    margin: 0;
+    padding: 0;
+    background-color: #293449;
+}
+
+footer .footer-bottom .container {}
