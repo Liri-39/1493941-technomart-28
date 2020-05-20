@@ -21,7 +21,8 @@ header .header-top .container {}
 
 header .header-top-logo {
     width: 220px;
-    background-color: #EE3643;
+    background: #EE3643;
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
 header .header-top-logo svg {
@@ -40,7 +41,9 @@ header .header-top-basket {}
 
 header .header-top-basket span {}
 
-header .header-top-order-go {}
+header .header-top-order-go {
+    
+}
 
 header .container {}
 
@@ -98,14 +101,14 @@ main .delivery .container {}
 /**/
 footer {}
 
-footer .footer-up {
+footer .footer-top {
     margin: 0;
     padding: 0;
     background-color: #32425C;
 
 }
 
-footer .footer-up .container {}
+footer .footer-top .container {}
 
 footer .footer-bottom {
     margin: 0;
