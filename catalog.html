@@ -22,7 +22,7 @@
                     <form action="https://echo.htmlacademy.ru" method="get">
                         <label for="search">Поиск:</label>
                         <input type="text" name="search" id="search">
-                        <button type="submit" class="visually-hidden"></button>
+                        <button type="submit" class="visually-hidden" aria-label="Найти"></button>
                     </form>
                 </div>
                 <div class="header-top-bookmark"><a href="">Закладки:<span>0</span></a></div>
@@ -81,7 +81,7 @@
                 <form action="https://echo.htmlacademy.ru/" method="get">
                     <fieldset>
                         <legend>
-                            <h3>Цена</h3>
+                            Цена
                         </legend>
                         <div class="price-range">
                             <span class="price-range-slider1">*</span>
@@ -92,23 +92,43 @@
                     </fieldset>
                     <fieldset>
                         <legend>
-                            <h3>Производители</h3>
+                            Производители
                         </legend>
                         <ul>
-                            <li><label><input type="checkbox" name="brands1" checked> BOSCH</label></li>
-                            <li><label><input type="checkbox" name="brands2"> ИНТЕРСКОЛ</label></li>
-                            <li><label><input type="checkbox" name="brands3" checked> MAKIta</label></li>
-                            <li><label><input type="checkbox" name="brands4"> Dewalt</label></li>
-                            <li><label><input type="checkbox" name="brands5"> Hitachi</label></li>
+                            <li>
+                                <label for="brands1"></label>
+                                <input type="checkbox" id="brands1" name="brands1" checked> BOSCH
+                            </li>
+                            <li>
+                                <label for="brands2"></label>
+                                <input type="checkbox" id="brands2" name="brands2"> ИНТЕРСКОЛ
+                            </li>
+                            <li>
+                                <label for="brands3"></label>
+                                <input type="checkbox" id="brands3" name="brands3" checked> MAKIta
+                            </li>
+                            <li>
+                                <label for="brands4"></label><input type="checkbox" id="brands4" name="brands4"> Dewalt
+                            </li>
+                            <li>
+                                <label for="brands5"></label>
+                                <input type="checkbox" id="brands5" name="brands5"> Hitachi
+                            </li>
                         </ul>
                     </fieldset>
                     <fieldset>
                         <legend>
-                            <h3>Питание</h3>
+                            Питание
                         </legend>
                         <ul>
-                            <li><label><input type="radio" name="supply" value="1" checked> Аккумуляторные</label></li>
-                            <li><label><input type="radio" name="supply" value="2"> Сетевые</label></li>
+                            <li>
+                                <label for="supply1"></label>
+                                <input type="radio" id="supply1" name="supply" value="1" checked> Аккумуляторные
+                            </li>
+                            <li>
+                                <label for="supply2"></label>
+                                <input type="radio" id="supply2" name="supply" value="2"> Сетевые
+                            </li>
                         </ul>
                     </fieldset>
                     <button type="submit">Показать</button>
@@ -256,7 +276,7 @@
         <button type="button" aria-label="Закрыть"><img src="img/icon-close.svg"></button>
         <img src="img/icon-mark.svg">
         <p class="notice">Товар добавлен в корзину!</p>
-        <button type="submit">Оформить заказ</button>
+        <a href="blank.html">Оформить заказ</a>
         <button type="button">Продолжить покупки</button>
     </div>
 

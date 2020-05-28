@@ -22,7 +22,7 @@
                     <form action="https://echo.htmlacademy.ru" method="get">
                         <label for="search">Поиск:</label>
                         <input type="text" name="search" id="search">
-                        <button type="submit" class="visually-hidden"></button>
+                        <button type="submit" aria-label="Найти" class="visually-hidden"></button>
                     </form>
                 </div>
                 <div class="header-top-bookmark">
@@ -239,30 +239,8 @@
                 <section class="map">
                     <h2>Контакты</h2>
                     <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-                    <button type="button"><img src="img/map.jpg" width="100" height="100" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></button>
+                    <a href=""><img src="img/map.jpg" width="100" height="100" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
                     <a class="button" href="#">Заблудились? Напишите нам!</a>
-                    <div class="pop-up map">
-                        <button type="button"><img src="img/icon-close.svg"></button>
-                        <img src="img/map.jpg" width="100" height="100" alt="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-                    </div>
-                    <div class="pop-up contact-form">
-                        <button type="button" aria-label="Закрыть контактную форму"><img src="img/icon-close.svg"></button>
-                        <form action="https://echo.htmlacademy.ru" method="post">
-                            <p>
-                                <label for="appointment-name">Ваше имя</label>
-                                <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
-                            </p>
-                            <p>
-                                <label for="appointment-email">Ваш e-mail:</label>
-                                <input id="appointment-email" type="email" name="email" placeholder="email@example.com">
-                            </p>
-                            <p>
-                                <label>Текст письма:</label>
-                                <textarea rows="5" name="text" placeholder="В свободной форме"></textarea>
-                            </p>
-                            <button type="submit">Оформить заказ</button>
-                        </form>
-                    </div>
                 </section>
             </div>
         </section>
@@ -314,6 +292,30 @@
             </div>
         </section>
     </footer>
+
+    <div class="pop-up map">
+        <button type="button"><img src="img/icon-close.svg"></button>
+        <img src="img/map.jpg" width="100" height="100" alt="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+    </div>
+
+    <div class="pop-up contact-form">
+        <button type="button" aria-label="Закрыть контактную форму"><img src="img/icon-close.svg"></button>
+        <form action="https://echo.htmlacademy.ru" method="post">
+            <p>
+                <label for="appointment-name">Ваше имя</label>
+                <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+            </p>
+            <p>
+                <label for="appointment-email">Ваш e-mail:</label>
+                <input id="appointment-email" type="email" name="email" placeholder="email@example.com">
+            </p>
+            <p>
+                <label>Текст письма:</label>
+                <textarea rows="5" name="text" placeholder="В свободной форме"></textarea>
+            </p>
+            <button type="submit">Оформить заказ</button>
+        </form>
+    </div>
 </body>
 
 </html>
