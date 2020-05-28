@@ -4,6 +4,17 @@ body {
     padding: 0;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .container {
     width: 940px;
     margin: 0 auto;
@@ -19,13 +30,15 @@ header .header-top {
 
 header .header-top .container {}
 
-header .header-top-logo {
+.footer-top-logo,
+.header-top-logo {
+    display: block;
     width: 220px;
     background: #EE3643;
     box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
-header .header-top-logo svg {
+.header-top-logo img {
     margin: 0 auto;
 }
 
@@ -41,9 +54,7 @@ header .header-top-basket {}
 
 header .header-top-basket span {}
 
-header .header-top-order-go {
-    
-}
+header .header-top-order-go {}
 
 header .container {}
 

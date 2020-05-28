@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
@@ -18,7 +19,11 @@
                 </div>
                 <div class="header-top-search">
                     <img src="img/icon-search.svg">
-                    Поиск
+                    <form action="https://echo.htmlacademy.ru" method="get">
+                        <label for="search">Поиск:</label>
+                        <input type="text" name="search" id="search">
+                        <button type="submit" class="visually-hidden"></button>
+                    </form>
                 </div>
                 <div class="header-top-bookmark">
                     <a href="blank.html">
@@ -61,7 +66,7 @@
             <section class="header-nav">
                 <nav>
                     <ul>
-                        <li><a href="blank.html">Главная </a></li>
+                        <li><a href="#">Главная </a></li>
                         <li><a href="blank.html">Компания </a></li>
                         <li><a href="catalog.html">Каталог </a></li>
                         <li><a href="blank.html">Новости </a></li>
@@ -100,13 +105,13 @@
                     <span></span>
                     <span></span>
                     <div class="slide active">
-                        <img src="img/slide1.jpg" width=”100” height=”100” alt="Перфораторы">
+                        <img src="img/slide1.jpg" width="100" height="100" alt="Перфораторы">
                         <p class="slide-title">Перфораторы</p>
                         <p>Настоящие мужские игрушки</p>
                         <a href="catalog.html"> ОТКРЫТЬ КАТАЛОГ</a>
                     </div>
                     <div class="slide">
-                        <img src="img/slide2.jpg" width=”100” height=”100” alt="Дрели">
+                        <img src="img/slide2.jpg" width="100" height="100" alt="Дрели">
                         <p class="slide-title">Дрели</p>
                         <p>Соседям на радость!</p>
                         <a href="catalog.html"> ОТКРЫТЬ КАТАЛОГ</a>
@@ -122,26 +127,27 @@
                 </div>
                 <ul class="goods-list">
                     <li class="goods-item">
-                        <img src="img/BOSCH.jpg" width=”100” height=”100” alt="Перфоратор BOSCH BFG 9000">
+                        <img src="img/BOSCH.jpg" width="100" height="100" alt="Перфоратор BOSCH BFG 9000">
                         <a class="goods-item-title" href="blank.html">Перфоратор BOSCH BFG 9000</a>
                         <p class="goods-item-price-old">32500 Р.</p>
                         <p class="goods-item-price">25500 Р.</p>
                     </li>
                     <li class="goods-item new">
-                        <img src="img/BOSCH%20BFG.jpg" width=”100” height=”100” alt="Перфоратор BOSCH BFG 3000">
+                        <img src="img/BOSCH%20BFG.jpg" width="100" height="100" alt="Перфоратор BOSCH BFG 3000">
                         <a class="goods-item-title" href="">Перфоратор BOSCH BFG 3000</a>
                         <p class="goods-item-price-old">22500 Р.</p>
                         <p class="goods-item-price">15500 Р.</p>
 
                     </li>
                     <li class="goods-item">
-                        <img src="img/BOSCH6000.jpg" width=”100” height=”100” alt="Перфоратор BOSCH BFG 6000">
+                    <li class="goods-item">
+                        <img src="img/BOSCH6000.jpg" width="100" height="100" alt="Перфоратор BOSCH BFG 6000">
                         <a class="goods-item-title" href="">Перфоратор BOSCH BFG 6000</a>
                         <p class="goods-item-price-old">30500 Р.</p>
                         <p class="goods-item-price">25500 Р.</p>
                     </li>
                     <li class="goods-item new">
-                        <img src="img/BOSCH%20BFG.jpg" width=”100” height=”100” alt="Перфоратор BOSCH BFG 2000">
+                        <img src="img/BOSCH%20BFG.jpg" width="100" height="100" alt="Перфоратор BOSCH BFG 2000">
                         <a class="goods-item-title" href="">Перфоратор BOSCH BFG 2000</a>
                         <p class="goods-item-price">12500 Р.</p>
                     </li>
@@ -155,14 +161,14 @@
                     <a href="catalog.html">Открыть каталог</a>
                 </div>
                 <ul class="brands-list">
-                    <li><a href="blank.html"><img src="img/bosch.png" width=”100” height=”100” alt="bosch"></a></li>
-                    <li><a href="blank.html"><img src="img/makita.png" width=”100” height=”100” alt="makita"></a></li>
-                    <li><a href="blank.html"><img src="img/dewalt.png" width=”100” height=”100” alt="dewalt"></a></li>
-                    <li><a href="blank.html"><img src="img/interskol.png" width=”100” height=”100” alt="interskol"></a></li>
-                    <li><a href="blank.html"><img src="img/hitachi.png" width=”100” height=”100” alt="hitachi"></a></li>
-                    <li><a href="blank.html"><img src="img/lg.png" width=”100” height=”100” alt="LG"></a></li>
-                    <li><a href="blank.html"><img src="img/aeg.png" width=”100” height=”100” alt="aeg"></a></li>
-                    <li><a href=""><img src="img/Metabo.png" width=”100” height=”100” alt="Metabo"></a></li>
+                    <li><a href="blank.html"><img src="img/bosch.png" width="100" height="100" alt="bosch"></a></li>
+                    <li><a href="blank.html"><img src="img/makita.png" width="100" height="100" alt="makita"></a></li>
+                    <li><a href="blank.html"><img src="img/dewalt.png" width="100" height="100" alt="dewalt"></a></li>
+                    <li><a href="blank.html"><img src="img/interskol.png" width="100" height="100" alt="interskol"></a></li>
+                    <li><a href="blank.html"><img src="img/hitachi.png" width="100" height="100" alt="hitachi"></a></li>
+                    <li><a href="blank.html"><img src="img/lg.png" width="100" height="100" alt="LG"></a></li>
+                    <li><a href="blank.html"><img src="img/aeg.png" width="100" height="100" alt="aeg"></a></li>
+                    <li><a href=""><img src="img/Metabo.png" width="100" height="100" alt="Metabo"></a></li>
                 </ul>
             </div>
         </section>
@@ -232,8 +238,30 @@
                 <section class="map">
                     <h2>Контакты</h2>
                     <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-                    <img src="img/map.jpg" width="100" height="100" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+                    <button type="button"><img src="img/map.jpg" width="100" height="100" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></button>
                     <a class="button" href="#">Заблудились? Напишите нам!</a>
+                    <div class="pop-up map">
+                        <button type="button"><img src="img/icon-close.svg"></button>
+                        <img src="img/map.jpg" width="100" height="100" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+                    </div>
+                    <div class="pop-up contact-form">
+                        <button type="button"><img src="img/icon-close.svg"></button>
+                        <form action="https://echo.htmlacademy.ru" method="post">
+                            <p>
+                                <label for="appointment-name">Ваше имя</label>
+                                <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+                            </p>
+                            <p>
+                                <label for="appointment-email">Ваш e-mail:</label>
+                                <input id="appointment-email" type="email" name="email" placeholder="email@example.com">
+                            </p>
+                            <p>
+                                <label>Текст письма:</label>
+                                <textarea rows="5" name="text" placeholder="В свободной форме"></textarea>
+                            </p>
+                            <button type="submit">Оформить заказ</button>
+                        </form>
+                    </div>
                 </section>
             </div>
         </section>
