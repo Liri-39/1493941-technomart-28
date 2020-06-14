@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body>
+<body class="page-body">
     <header>
         <section class="header-top">
             <div class="container">
                 <div class="header-top-logo">
                     <a href="index.html">
-                        <img src="img/logo-technomart.svg" width="100" height="50" alt="Техномарт">
+
                     </a>
                 </div>
                 <div class="header-top-search">
-                    <img src="img/icon-search.svg">
-                    <form action="https://echo.htmlacademy.ru" method="get">
+
+                    <form id="search-form" action="https://echo.htmlacademy.ru" method="get">
                         <label for="search">Поиск:</label>
                         <input type="text" name="search" id="search">
                         <button type="submit" aria-label="Найти" class="visually-hidden"></button>
@@ -83,7 +85,7 @@
         <h1 class="visually-hidden">Итернет-магазин Техномарт</h1>
         <section class="category">
             <div class="container">
-                <ul class="material">
+                <ul class="promo">
                     <li>Материалы
                         <a href="catalog.html">На любой вкус</a>
                     </li>
@@ -107,14 +109,18 @@
                     <span></span>
                     <div class="slide active">
                         <img src="img/slide1.jpg" width="100" height="100" alt="Перфораторы">
-                        <p class="slide-title">Перфораторы</p>
-                        <p>Настоящие мужские игрушки</p>
+                        <div class="slide-text">
+                            <p class="slide-title">Перфораторы</p>
+                            <p>Настоящие мужские игрушки</p>
+                        </div>
                         <a href="catalog.html"> ОТКРЫТЬ КАТАЛОГ</a>
                     </div>
                     <div class="slide">
                         <img src="img/slide2.jpg" width="100" height="100" alt="Дрели">
-                        <p class="slide-title">Дрели</p>
-                        <p>Соседям на радость!</p>
+                        <div class="slide-text">
+                            <p class="slide-title">Дрели</p>
+                            <p>Соседям на радость!</p>
+                        </div>
                         <a href="catalog.html"> ОТКРЫТЬ КАТАЛОГ</a>
                     </div>
                 </div>
@@ -140,7 +146,6 @@
                         <p class="goods-item-price">15500 Р.</p>
 
                     </li>
-                    <li class="goods-item">
                     <li class="goods-item">
                         <img src="img/BOSCH6000.jpg" width="100" height="100" alt="Перфоратор BOSCH BFG 6000">
                         <a class="goods-item-title" href="">Перфоратор BOSCH BFG 6000</a>
