@@ -178,7 +178,9 @@ header .header-middle-description {
     color: #EE3643;
 }
 
-.header-middle-contact-info {}
+.header-middle-contact-info {
+    margin-left: 100px;
+}
 
 .header-middle-phone {
     width: 270px;
@@ -224,7 +226,7 @@ header .header-middle-description {
     justify-content: center;
     color: #000000;
     background: white;
-
+    margin-left: 60px;
 }
 
 .login::before {
@@ -245,6 +247,7 @@ header .header-middle-description {
     justify-content: center;
     color: #000000;
     background: white;
+    margin-left: 10px;
 }
 
 .header-nav {
