@@ -73,6 +73,7 @@ header {
     outline-offset: -5px;
     font-size: 18px;
     line-height: 24px;
+    background: rgba(0, 0, 0, 0.0001)
 }
 
 .header-top {
@@ -191,9 +192,12 @@ main {
     background-color: #FFFFFF;
 }
 
-main .category {}
+.category {
+    margin-top: 59px;
+    margin-bottom: 59px;
+}
 
-main .category .container {
+.category .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     outline-offset: -5px;
@@ -243,7 +247,7 @@ main .category .container {
     grid-column: 3/4
 }
 
-.promo li a {
+.promo li a:not(.button) {
     position: absolute;
     left: 23px;
     bottom: 21px;
@@ -264,9 +268,30 @@ main .category .container {
 }
 
 .slider {
+    position: relative;
     grid-column: 1/3;
-    grid-row: 2/3;
+    grid-row: 2/4;
 }
+
+.slider-left-arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 266px;
+    vertical-align: middle;
+
+}
+
+.slider-rigth-arrow {
+    position: absolute;
+}
+
+.slide-indicator {
+    position: absolute;
+}
+
+.slide-indicator.active {}
 
 .slide {
     position: relative;
@@ -296,6 +321,7 @@ main .category .container {
 .slide-title {
     margin-top: 23px;
     margin-bottom: 5px;
+    margin-left: 24px;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -303,11 +329,16 @@ main .category .container {
     text-transform: uppercase;
 }
 
-.slide p {
+.slide-slogan {
+    padding: 0;
+    margin: 0;
     margin-left: 24px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
 }
 
-.slide a {
+.slide .button {
     position: absolute;
     bottom: 27px;
     left: 0;
