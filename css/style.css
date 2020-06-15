@@ -204,13 +204,63 @@ main .category .container {
 .promo {
     margin: 0;
     padding: 0;
-    display: flex;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .promo li {
+    position: relative;
     list-style: none;
     width: 300px;
     height: 123px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.orange {
+    background: #FFBF47;
+}
+
+.blue {
+    background: #3BBCE3;
+}
+
+.berry {
+    background: #DC91D8;
+
+}
+
+.green {
+    background: #8ED78F;
+    grid-row: 2/3;
+    grid-column: 3/4
+}
+
+.orange:last-child {
+    grid-row: 3/4;
+    grid-column: 3/4
+}
+
+.promo li a {
+    position: absolute;
+    left: 23px;
+    bottom: 21px;
+    width: 135px;
+    height: 38px;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.3;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
 }
 
 .slider {
