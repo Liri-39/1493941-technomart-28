@@ -496,7 +496,7 @@ main {
     content: "";
     background: #eee0 url(../img/icon-left.svg) no-repeat center;
     position: absolute;
-
+    cursor: pointer;
     width: 60px;
     height: 266px;
     z-index: 300;
@@ -511,6 +511,7 @@ main {
     width: 60px;
     height: 266px;
     z-index: 300;
+    cursor: pointer;
 }
 
 .slide-indicator {
@@ -578,6 +579,35 @@ main {
     line-height: 38px;
 }
 
+.slide-indicator {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    width: 620px;
+    height: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.indicator {
+    display: block;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 6px;
+    background-color: var(--basic-white);
+    cursor: pointer;
+    z-index: 200;
+}
+
+.indicator-active {
+    background: #EE3643;
+    border: 3px solid #ffffff;
+    width: 6px;
+    height: 6px;
+}
 
 .slide .button:active {
     background-color: var(--basic-dark-red);
@@ -593,7 +623,34 @@ main .goods {}
 
 .goods-title {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    align-items: center;
+    background: #F9F5F0;
+}
+
+h2 {
+    padding-top: 29px;
+    padding-left: 28px;
+    padding-bottom: 30px;
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+
+}
+
+.goods-title a {
+    width: 192px;
+    height: 38px;
+    margin-right: 14px;
+    background: var(--basic-red);
+    color: var(--basic-white);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    line-height: 38px;
 }
 
 .goods-list {
@@ -601,11 +658,13 @@ main .goods {}
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.goods-list li {
+.goods-item {
     list-style: none;
+    width: 220px;
+    position: relative;
 }
 
-main .brands {}
+.brands {}
 
 main .brands .container {
     outline-offset: -5px;
@@ -614,8 +673,23 @@ main .brands .container {
 
 .brands-title {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    align-items: center;
+    background: #F9F5F0;
 }
+
+.brands-title a {
+    width: 192px;
+    height: 38px;
+    margin-right: 14px;
+    background: var(--basic-red);
+    color: var(--basic-white);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    line-height: 38px;
+}
+
 
 .brands-list {
     display: grid;
