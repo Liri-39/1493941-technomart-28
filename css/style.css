@@ -73,8 +73,6 @@ p {
     display: grid;
     grid-template-rows: min-content 1fr min-content;
     align-content: start;
-    outline-offset: -5px;
-    outline: 5px solid rgba(0, 255, 255, 0.3);
 }
 
 /* */
@@ -472,6 +470,7 @@ main {
     content: "new";
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #EE3643;
     width: 100px;
     height: 30px;
@@ -484,6 +483,7 @@ main {
     font-weight: normal;
     font-size: 14px;
     transform: rotate(45deg);
+    color: var(--basic-white);
 }
 
 .slider {
@@ -638,7 +638,6 @@ h2 {
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
-
 }
 
 .goods-title a {
@@ -654,14 +653,80 @@ h2 {
 }
 
 .goods-list {
+    padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
 }
 
 .goods-item {
+    display: flex;
     list-style: none;
     width: 220px;
+    min-height: 318px;
     position: relative;
+    background: var(--basic-white);
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+}
+
+.goods-item a,
+.goods-item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.goods-item img {
+    width: fit-content;
+    display: flex;
+}
+
+.goods-item-info {
+    position: relative;
+}
+
+.goods-item-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 141px;
+    height: 38px;
+    background-color: var(--basic-red);
+    margin-bottom: 21px;
+    font-family: PT Sans;
+    color: var(--basic-white);
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.goods-item-price-old {
+    position: absolute;
+    bottom: 72px;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: line-through;
+    text-transform: uppercase;
+    color: #A9A9A9;
+}
+
+.goods-item-title {
+    text-align: center;
+    margin: 5px 17px 38px 17px;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
 }
 
 .brands {}
