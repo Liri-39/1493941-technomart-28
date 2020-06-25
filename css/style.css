@@ -27,6 +27,7 @@
     --basic-light-orange: #FFD180;
     --basic-light-grayish-blue: #F1F5F7;
     --basic-dark-dark-blue: #212A3A;
+    --basic-light-grayish-orange: #f7f3ec;
     /* promo box */
     --special-orange: #FFBF47;
     --special-blue: #3BBCE3;
@@ -88,9 +89,9 @@ h2 {
     margin: 0px;
     padding: 0px;
     font-size: 30px;
+    font-weight: 400;
     line-height: 30px;
     text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 h3 {
@@ -103,7 +104,7 @@ h3 {
 }
 
 h4 {
-    font-weight: bold;
+    font-weight: 500;
     font-size: 21px;
     line-height: 30px;
 }
@@ -226,11 +227,13 @@ header {
     height: 42px;
     border: none;
     background-color: var(--basic-white);
+
 }
 
 .header-top-search input[id=search]:focus {
     border: none;
     background: var(--basic-white) url("../img/icon-search-red.svg") no-repeat 17px center;
+    outline: none;
 }
 
 
@@ -249,10 +252,11 @@ header {
 
 .header-top-bookmark::before {
     content: "";
-    width: 32px;
-    height: 42px;
+    width: 14px;
+    height: 16px;
     background: url("../img/icon-bookmark.svg") no-repeat center;
     opacity: 0.3;
+    margin-right: 9px;
 }
 
 .header-top-bookmark:hover::before {
@@ -271,10 +275,11 @@ header {
 
 .header-top-basket::before {
     content: "";
-    width: 32px;
-    height: 42px;
-    background: url("../img/icon-cart.svg") no-repeat center;
+    width: 15px;
+    height: 15px;
+    background: url(../img/icon-cart.svg) no-repeat center;
     opacity: 0.3;
+    margin-right: 8px;
 }
 
 .header-top-basket:hover::before {
@@ -314,7 +319,7 @@ header {
     border: 3px solid var(--basic-white);
     box-sizing: border-box;
     color: var(--basic-red);
-    font-weight: bold;
+    font-weight: 500;
     font-size: 21px;
     display: flex;
     align-items: center;
@@ -521,7 +526,7 @@ main {
     list-style: none;
     width: 278px;
     height: 103px;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 24px;
     line-height: 30px;
     color: var(--basic-white);
@@ -663,7 +668,7 @@ main {
     margin-bottom: 5px;
     margin-left: 24px;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 36px;
     text-transform: uppercase;
@@ -687,9 +692,12 @@ main {
     background: var(--basic-red);
     color: var(--basic-white);
     margin-left: 24px;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 38px;
+    line-height: 18px;
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .slide-indicator {
@@ -756,7 +764,9 @@ main .goods {
     text-transform: uppercase;
     display: flex;
     justify-content: center;
-    line-height: 38px;
+    font-size: 14px;
+    line-height: 18px;
+    align-items: center;
 }
 
 .goods-list {
@@ -837,7 +847,6 @@ main .goods {
     position: relative;
     font-family: 'PT Sans', sans-serif;
     font-style: normal;
-    font-weight: bold;
     font-size: 17px;
     line-height: 18px;
 }
@@ -853,13 +862,15 @@ main .goods {
     width: 141px;
     height: 38px;
     background-color: var(--basic-red);
-    margin-bottom: 21px;
+    margin-bottom: 20px;
     color: var(--basic-white);
     text-transform: uppercase;
     position: relative;
     overflow: hidden;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    margin-left: 12px;
+
 }
 
 .goods-item-price::before {
@@ -897,9 +908,10 @@ main .goods {
 
 .goods-item-title {
     text-align: center;
-    margin: 5px 17px 38px 17px;
+    margin: 5px 17px 39px 17px;
     font-size: 18px;
     line-height: 20px;
+    font-weight: 600;
     color: var(--basic-black);
 }
 
@@ -927,13 +939,15 @@ main .goods {
 .brands-title a {
     width: 192px;
     height: 38px;
-    margin-right: 14px;
+    margin-right: 19px;
     background: var(--basic-red);
     color: var(--basic-white);
     text-transform: uppercase;
     display: flex;
     justify-content: center;
-    line-height: 38px;
+    font-size: 14px;
+    line-height: 18px;
+    align-items: center;
 }
 
 
@@ -985,7 +999,7 @@ main .goods {
 
 .services-title {
     grid-column: 1/3;
-    margin-bottom: 69px;
+    margin-bottom: 70px;
 }
 
 .services-title h2 {
@@ -995,6 +1009,7 @@ main .goods {
 .services-title p {
     font-size: 13px;
     line-height: 24px;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .services-list {
@@ -1009,21 +1024,18 @@ main .goods {
     position: absolute;
     width: 10px;
     height: 279px;
-    right: -10px;
-    bottom: 0px;
-    background: rgba(0, 0, 0, 0.0001);
-    opacity: 0.25;
+    right: 0;
+    bottom: -25%;
+    background: url('../img/border-tab.png');
+    /*opacity: 0.25;*/
 }
 
-.tab h3 {
-    font-weight: bold;
+.tab {
+    font-weight: 500;
     font-size: 21px;
     line-height: 30px;
     text-transform: none;
     margin-bottom: 0;
-}
-
-.services-list .tab {
     list-style: none;
     display: flex;
     justify-content: flex-start;
@@ -1050,10 +1062,10 @@ main .goods {
 }
 
 .services-slides p {
-    width: 330px;
+    width: 280px;
     font-size: 13px;
     line-height: 24px;
-    z-index: 100;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .services-slides .services-slides-title {
@@ -1073,7 +1085,7 @@ main .goods {
     position: relative;
 }
 
-.services-slides .active {
+.services-slides .slide-active {
     display: block;
 }
 
@@ -1085,42 +1097,49 @@ main .goods {
 
 .delivery h2 {
     margin-bottom: 24px;
+    font-weight: 300;
 }
 
 .delivery p {
     font-size: 13px;
     line-height: 24px;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .delivery h2 + p {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
 }
 
 .about p {
-    width: 440px;
+    width: 478px;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .about ul {
     margin: 0;
     padding: 0;
     margin-bottom: 20px;
+    margin-top: 2px;
 }
 
-.about ul li {
-    display: flex;
+.about li {
     list-style: none;
+    font-size: 18px;
     line-height: 24px;
     margin-bottom: 12px;
+    position: relative;
+    padding-left: 37px;
 }
 
-.about ul li:last-child {
+.about li:last-child {
     margin-bottom: 0px;
 }
 
-.about li::before {
-    display: flex;
-    align-self: center;
+.about li::after {
     content: "";
+    position: absolute;
+    top: 12px;
+    left: 0;
     width: 25px;
     height: 2px;
     background: var(--basic-red);
@@ -1129,6 +1148,7 @@ main .goods {
 
 .map p {
     width: 181px;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .map img {
@@ -1152,7 +1172,7 @@ main .goods {
 
 .map .button {
     width: 300px;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .delivery .container {
@@ -1184,14 +1204,16 @@ footer {
     background-color: var(--basic-red);
 }
 
-footer .footer-top {
+.footer-top {
     margin: 0;
     padding: 0;
     background-color: var(--basic-dark);
-
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
 }
 
-footer .footer-top .container {
+.footer-top .container {
     position: relative;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -1202,10 +1224,8 @@ footer .footer-top .container {
     grid-column: 1/2;
     grid-row: 1/3;
     margin-top: 90px;
-    margin-bottom: 54px;
+    margin-bottom: 55px;
     color: var(--basic-ligth-blue);
-    font-size: 18px;
-    line-height: 24px;
 }
 
 .footer-top-menu {
@@ -1338,4 +1358,48 @@ footer ul {
 
 .filter {
     grid-row: 3/6;
+}
+
+.sorter {
+    display: flex;
+}
+
+.category-description {
+    grid-column: 1/3;
+}
+
+.pagination {
+    display: flex;
+}
+
+.catalog .goods-list {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.catalog {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.filter h3 {
+    display: flex;
+    flex-direction: column;
+    height: 38px;
+    font-size: 13px;
+    line-height: 18px;
+    background: var(--basic-light-grayish-orange);
+
+}
+
+.tab:last-child {
+    margin-bottom: 0;
+}
+
+.header-top a {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.footer-top-logo a {
+    height: 23px;
 }
