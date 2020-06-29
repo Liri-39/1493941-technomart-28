@@ -191,7 +191,6 @@ header {
     width: 270px;
     height: 42px;
     box-sizing: border-box;
-
 }
 
 .header-top-search form {
@@ -242,11 +241,11 @@ header {
     opacity: 0.3;
 }
 
-.icon-search path {
+.icon-search {
     fill: var(--basic-white)
 }
 
-.header-top-search input:focus .icon-search path {
+.header-top-search input:focus + .icon-search {
     fill: var(--basic-red);
     opacity: 1;
 }
@@ -1557,6 +1556,8 @@ footer ul {
     line-height: 30px;
     font-weight: 600;
     text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 16px;
 }
 
 .filter ul {
@@ -1571,7 +1572,43 @@ footer ul {
     color: var(--special);
 }
 
-.sorter {
+.filter-option {
+    margin-bottom: 18px;
+    padding-left: 35px;
+}
+
+.filter-option label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+    content: "";
+    position: absolute;
+    left: -32px;
+    top: -2px;
+    width: 23px;
+    height: 23px;
+    border: 2px solid #C5C5C5;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.filter-input-checkbox:checked + label::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -29px;
+    width: 22px;
+    height: 17px;
+    background-image: url("../img/icon-v.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.sorters {
     display: flex;
     align-items: center;
     background: var(--basic-light-grayish-orange);
@@ -1581,7 +1618,7 @@ footer ul {
     line-height: 18px;
 }
 
-.sorter h3 {
+.sorters h3 {
     margin: 0;
     padding: 0;
     margin-left: 19px;
@@ -1590,16 +1627,20 @@ footer ul {
     font-weight: 400;
 }
 
-.sorter span {
+.sorter {
     text-transform: uppercase;
     text-decoration: underline;
     text-decoration-style: dotted;
     text-decoration-color: var(--basic-red);
+    color: var(--basic-black);
+    opacity: 0.3;
 }
 
 .sorter-active {
     text-decoration: none;
     text-decoration-style: none;
+    color: var(--basic-red);
+    opacity: 1;
 }
 
 .category-description {
