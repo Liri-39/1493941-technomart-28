@@ -20,10 +20,8 @@
                     </a>
                 </div>
                 <div class="header-top-search">
-                    <form id="search-form" action="https://echo.htmlacademy.ru" method="get">
-                        <label for="search">Поиск:</label>
-                        <input type="text" name="search" id="search" value="" placeholder="Перфоратор">
-                        <button type="submit" aria-label="Найти" class="visually-hidden"></button>
+                    <form action="https://echo.htmlacademy.ru" method="get" id="search-form">
+                        <input type="search" placeholder="Поиск:" name="search" id="search">
                     </form>
                 </div>
                 <div class="header-top-bookmark">
@@ -230,18 +228,18 @@
                     </p>
                 </div>
                 <ul class="services-list">
-                    <li class="tab tab-active">
-                        Доставка
+                    <li> <a class="tab tab-active">
+                            Доставка</a>
                     </li>
-                    <li class="tab">
-                        Гарантия
+                    <li> <a class="tab">
+                            Гарантия</a>
                     </li>
-                    <li class="tab">
-                        Кредит
+                    <li> <a class="tab">
+                            Кредит</a>
                     </li>
                 </ul>
                 <div class="services-slides">
-                    <div class="slides  slide-active">
+                    <div class="slides">
                         <div class="services-slides-info">
                             <h3 class="services-slides-title">Доставка</h3>
                             <p>
@@ -258,11 +256,12 @@
                         </p>
                         <img src="img/guarantee.png" alt="">
                     </div>
-                    <div class="slides">
+                    <div class="slides slide-active">
                         <h3 class="services-slides-title">Кредит</h3>
                         <p>
                             Залезть в долговую яму стало проще! <br>Кредитные консультанты придут вам на помощь.
                         </p>
+                        <a class="button" href="">Отправить заявку</a>
                         <img src="img/credit.png" alt="">
                     </div>
                 </div>
@@ -366,4 +365,6 @@
             <button type="submit">Оформить заказ</button>
         </form>
     </div>
-</body></html>
+</body>
+
+</html>

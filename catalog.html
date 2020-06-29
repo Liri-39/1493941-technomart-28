@@ -102,10 +102,10 @@
 
             <section class="filter">
                 <h3>Фильтр:</h3>
-                <form action="https://echo.htmlacademy.ru/" method="get">
+                <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                     <fieldset>
                         <legend>
-                            Цена
+                            Цена:
                         </legend>
                         <div class="price-range">
                             <span class="price-range-slider1">*</span>
@@ -116,40 +116,41 @@
                     </fieldset>
                     <fieldset>
                         <legend>
-                            Производители
+                            Производители:
                         </legend>
                         <ul>
-                            <li>
+                            <li class="filter-option filter-checkbox">
                                 <label for="brands1"></label>
-                                <input type="checkbox" id="brands1" name="brands1" checked> BOSCH
+                                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="brands1" name="brands1" checked> BOSCH
                             </li>
-                            <li>
+                            <li class="filter-option filter-checkbox">
                                 <label for="brands2"></label>
-                                <input type="checkbox" id="brands2" name="brands2"> ИНТЕРСКОЛ
+                                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="brands2" name="brands2"> ИНТЕРСКОЛ
                             </li>
-                            <li>
+                            <li class="filter-option filter-checkbox">
                                 <label for="brands3"></label>
-                                <input type="checkbox" id="brands3" name="brands3" checked> MAKIta
+                                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="brands3" name="brands3" checked> MAKIta
                             </li>
-                            <li>
-                                <label for="brands4"></label><input type="checkbox" id="brands4" name="brands4"> Dewalt
+                            <li class="filter-option filter-checkbox">
+                                <label for="brands4"></label>
+                                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="brands4" name="brands4"> Dewalt
                             </li>
-                            <li>
+                            <li class="filter-option filter-checkbox">
                                 <label for="brands5"></label>
-                                <input type="checkbox" id="brands5" name="brands5"> Hitachi
+                                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="brands5" name="brands5"> Hitachi
                             </li>
                         </ul>
                     </fieldset>
                     <fieldset>
                         <legend>
-                            Питание
+                            Питание:
                         </legend>
                         <ul>
-                            <li>
+                            <li class="filter-option filter-radio">
                                 <label for="supply1"></label>
                                 <input type="radio" id="supply1" name="supply" value="1" checked> Аккумуляторные
                             </li>
-                            <li>
+                            <li class="filter-option filter-radio">
                                 <label for="supply2"></label>
                                 <input type="radio" id="supply2" name="supply" value="2"> Сетевые
                             </li>
