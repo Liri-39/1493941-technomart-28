@@ -191,7 +191,7 @@ header {
     width: 270px;
     height: 42px;
     box-sizing: border-box;
-    position: relative;
+
 }
 
 .header-top-search form {
@@ -200,6 +200,7 @@ header {
     outline: none;
     padding: 0;
     margin: 0;
+    position: relative;
 }
 
 .header-top-search input {
