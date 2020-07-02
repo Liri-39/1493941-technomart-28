@@ -43,9 +43,7 @@ body {
     background-color: var(--basic-background-grey);
     margin: 0;
     padding: 0;
-    font-family: 'Cuprum', sans-serif;
-    /*font-family: 'PT Sans',
-sans-serif;*/
+    font-family: 'PT Sans', 'Cuprum', "Tahoma", sans-serif;
     font-style: normal;
     font-weight: normal;
 
@@ -206,7 +204,7 @@ header {
     outline: none;
     padding: 0;
     margin: 0;
-    position: relative;   
+    position: relative;
 }
 
 .header-top-search input {
@@ -2152,6 +2150,10 @@ footer ul {
     padding-top: 46px;
 }
 
+.contact-form *:focus {
+    outline: none;
+}
+
 .contact-form form {
     display: flex;
     justify-content: center;
@@ -2161,7 +2163,7 @@ footer ul {
 
 .contact-form p {
     display: flex;
-    flex-direction: column;       
+    flex-direction: column;
 }
 
 .contact-form input[type=text],
@@ -2171,18 +2173,19 @@ footer ul {
     width: 220px;
     height: 38px;
     border: 2px solid #C5C5C5;
-box-sizing: border-box;
-border-radius: 2px;
+    box-sizing: border-box;
+    border-radius: 2px;
 }
 
 
-.contact-form input::placeholder, .contact-form textarea::placeholder {
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
     margin: 0;
     padding: 0;
     padding-top: 7px;
     padding-left: 12px;
     font-size: 13px;
-line-height: 24px;
+    line-height: 24px;
     color: #A9A9A9;
     font-family: 'PT Sans', sans-serif;
 }
@@ -2196,8 +2199,8 @@ line-height: 24px;
     padding: 0;
     width: 460px;
     border: 2px solid #C5C5C5;
-box-sizing: border-box;
-border-radius: 2px;
+    box-sizing: border-box;
+    border-radius: 2px;
 }
 
 .contact-form .button-red {
@@ -2207,6 +2210,6 @@ border-radius: 2px;
 
 .contact-form label {
     font-size: 18px;
-line-height: 24px;
+    line-height: 24px;
     margin-bottom: 11px;
 }
