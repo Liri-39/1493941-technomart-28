@@ -14,34 +14,22 @@
     <header>
         <section class="header-top">
             <div class="container">
-                <div class="header-top-logo">
-                    <a href="index.html">
-                        <img src="img/logo-technomart.svg" alt="ТЕХНОМАРТ">
-                    </a>
-                </div>
-                <div class="header-top-search">
-
-                    <form action="https://echo.htmlacademy.ru" method="get" id="search-form">
-                        <label class="visually-hidden" for="search">Поиск</label>
-                        <input type="search" placeholder="Поиск:" name="search" id="search">
-
-                        <svg class="icon-search" width="17" height="17" viewBox="0 0 17 17">
-                            <path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" /></svg>
-                    </form>
-                </div>
-                <div class="header-top-bookmark">
-                    <a href="blank.html">
-                        Закладки:<span>0</span>
-                    </a>
-                </div>
-                <div class="header-top-basket basket-full">
-                    <a href="blank.html">
-                        Корзина:<span>10</span>
-                    </a>
-                </div>
-                <div class="header-top-order-go">
-                    <a href="blank.html">Оформить заказ</a>
-                </div>
+                <a class="header-top-logo" href="index.html">
+                    <img src="img/logo-technomart.svg" width="108" height="18" alt="ТЕХНОМАРТ">
+                </a>
+                <form class="header-top-search" action="https://echo.htmlacademy.ru" method="get" id="search-form">
+                    <label class="visually-hidden" for="search">Поиск</label>
+                    <input type="search" placeholder="Поиск:" name="search" id="search">
+                    <svg class="icon-search" width="17" height="17" viewBox="0 0 17 17">
+                        <path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" /></svg>
+                </form>
+                <a class="header-top-bookmark" href="">
+                    Закладки:<span>0</span>
+                </a>
+                <a class="header-top-basket basket-full" href="">
+                    Корзина:<span>10</span>
+                </a>
+                <a class="header-top-order-go" href="">Оформить заказ</a>
             </div>
         </section>
 
@@ -49,8 +37,8 @@
             <section class="header-middle">
                 <p class="header-middle-description">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</p>
                 <div class="header-middle-contact-info">
-                    <div class="header-middle-phone">
-                        +7 (812) 555-05-55</div>
+                    <a class="header-middle-phone" href="tel:+78125550555">
+                        +7 (812) 555-05-55</a>
                     <p class="header-middle-adress">
                         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                     </p>
@@ -59,7 +47,8 @@
                     <a class="profile-user" href="">
                         <svg class="profile-user-icon" width="20" height="18" viewBox="0 0 20 18">
                             <path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z" /></svg>
-                        Равшан Джамшутович</a>
+                        Равшан Джамшутович
+                    </a>
                     <a class="logout" href="">
                         <svg width="21" height="17" viewBox="0 0 21 17">
                             <g>
@@ -77,29 +66,36 @@
 
             </section>
 
-            <section class="header-nav">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Главная </a></li>
-                        <li><a href="">Компания </a></li>
-                        <li><a href="catalog.html">Каталог </a></li>
-                        <li><a href="">Новости </a></li>
-                        <li><a href="">Спецпредложения </a></li>
-                        <li><a href="">Доставка </a></li>
-                        <li><a href="">Контакты </a></li>
-                    </ul>
-                </nav>
-            </section>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="index.html">Главная </a></li>
+                    <li><a href="">Компания </a></li>
+                    <li><a href="catalog.html">Каталог </a></li>
+                    <li><a href="">Новости </a></li>
+                    <li><a href="">Спецпредложения </a></li>
+                    <li><a href="">Доставка </a></li>
+                    <li><a href="">Контакты </a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
     <main>
         <div class="catalog-grid container">
             <ul class="breadcrumbs">
-                <li><a href="index.html"><img src="img/icon-home.svg" alt="На главную"></a> </li>
+                <li>
+                    <a href="index.html">
+                        <svg width="15" height="12" viewBox="0 0 15 12">
+                            <g>
+                                <path d="M3 8v4h4V8h2v4h4V8L8 3.516z" />
+                                <path d="M14.831 6.365L13 4.751V0h-2v2.987L8.332.635c-.02-.017-.043-.023-.064-.037a.465.465 0 0 0-.08-.047.551.551 0 0 0-.095-.024C8.062.521 8.032.515 8 .515c-.031 0-.061.006-.092.012a.46.46 0 0 0-.095.025c-.028.011-.053.029-.08.046-.021.014-.045.02-.064.037l-6.498 5.73a.501.501 0 0 0 .33.875.497.497 0 0 0 .331-.125L8 1.677l6.169 5.438a.501.501 0 0 0 .662-.75z" />
+                            </g>
+                        </svg>
+                    </a>
+                </li>
                 <li><a href="catalog.html">Каталог</a></li>
                 <li><a href="">Инструменты</a></li>
-                <li><a href="">Перфораторы</a></li>
+                <li><a>Перфораторы</a></li>
             </ul>
             <h2 class="catalog-title">Перфораторы</h2>
 
@@ -180,6 +176,7 @@
 
             <section class="sorters">
                 <h3>Сортировка:</h3>
+
                 <a class="sorter sorter-active" href="">По цене</a>
                 <a class="sorter" href="">По типу</a>
                 <a class="sorter" href="">По функционалу</a>
@@ -193,12 +190,13 @@
                         <path d="M5.5 10L0 0h11" />
                     </svg>
                 </a>
+
             </section>
 
             <section class="catalog">
                 <ul class="goods-list">
                     <li class="goods-item">
-                        <a href="blank.html">
+                        <a href="">
                             <img class="goods-item-image" src="img/BOSCH6000.jpg" width="100" height="100" alt="Перфоратор BOSCH BFG 6000">
                             <div class="goods-item-info">
                                 <b class="goods-item-title">Перфоратор BOSCH BFG 6000</b>
@@ -212,7 +210,7 @@
                         </div>
                     </li>
                     <li class="goods-item">
-                        <a href="blank.html">
+                        <a href="">
                             <img class="goods-item-image" src="img/BOSCH6000.jpg" width="100" height="100" alt="Перфоратор BOSCH BFG 6000">
                             <div class="goods-item-info">
                                 <b class="goods-item-title">Перфоратор BOSCH BFG 6000</b>
@@ -226,7 +224,7 @@
                         </div>
                     </li>
                     <li class="goods-item new">
-                        <a href="blank.html">
+                        <a href="">
                             <img class="goods-item-image" src="img/BOSCH6000.jpg" width="100" height="100" alt="Перфоратор BOSCH BFG 6000">
                             <div class="goods-item-info">
                                 <b class="goods-item-title">Перфоратор BOSCH BFG 6000</b>
@@ -240,7 +238,7 @@
                         </div>
                     </li>
                     <li class="goods-item new">
-                        <a href="blank.html">
+                        <a href="">
                             <img class="goods-item-image" src="img/BOSCH%20BFG.jpg" width="100" height="100" alt="Перфоратор BOSCH BFG 3000">
                             <div class="goods-item-info">
                                 <b class="goods-item-title">Перфоратор BOSCH BFG 3000</b>
@@ -254,7 +252,7 @@
                         </div>
                     </li>
                     <li class="goods-item">
-                        <a href="blank.html">
+                        <a href="">
                             <img class="goods-item-image" src="img/BOSCH6000.jpg" width="100" height="100" alt="Перфоратор BOSCH BFG 6000">
                             <div class="goods-item-info">
                                 <b class="goods-item-title">Перфоратор BOSCH BFG 6000</b>
@@ -268,7 +266,7 @@
                         </div>
                     </li>
                     <li class="goods-item new">
-                        <a href="blank.html">
+                        <a href="">
                             <img class="goods-item-image" src="img/BOSCH%20BFG.jpg" width="100" height="100" alt="Перфоратор BOSCH BFG 2000">
                             <div class="goods-item-info">
                                 <b class="goods-item-title">Перфоратор BOSCH BFG 2000</b>
@@ -281,7 +279,7 @@
                         </div>
                     </li>
                     <li class="goods-item new">
-                        <a href="blank.html">
+                        <a href="">
                             <img class="goods-item-image" src="img/BOSCH.jpg" width="100" height="100" alt="Перфоратор BOSCH BFG 3000">
                             <div class="goods-item-info">
                                 <b class="goods-item-title">Перфоратор BOSCH BFG 3000</b>
@@ -295,7 +293,7 @@
                         </div>
                     </li>
                     <li class="goods-item">
-                        <a href="blank.html">
+                        <a href="">
                             <img class="goods-item-image" src="img/BOSCH6000.jpg" width="100" height="100" alt="Перфоратор BOSCH BFG 6000">
                             <div class="goods-item-info">
                                 <b class="goods-item-title">Перфоратор BOSCH BFG 6000</b>
@@ -309,7 +307,7 @@
                         </div>
                     </li>
                     <li class="goods-item new">
-                        <a href="blank.html">
+                        <a href="">
                             <img class="goods-item-image" src="img/BOSCH%20BFG.jpg" width="100" height="100" alt="Перфоратор BOSCH BFG 2000">
                             <div class="goods-item-info">
                                 <b class="goods-item-title">Перфоратор BOSCH BFG 2000</b>
@@ -354,7 +352,8 @@
                     </a>
                 </div>
                 <address class="footer-top-adress">
-                    г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55
+                    г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+                    <a href="tel:+78125550555">+7 (812) 555-05-55</a>
                 </address>
                 <ul class="footer-top-menu">
                     <li><a href="">Компания</a></li>
@@ -395,9 +394,11 @@
         <button class="button-close" type="button" aria-label="Закрыть"><img src="img/icon-close.svg" alt=""></button>
         <span class="notice">Товар добавлен в корзину!</span>
         <div class="buttons-field">
-            <a class="button button-red" href="blank.html">Оформить заказ</a>
+            <a class="button button-red" href="">Оформить заказ</a>
             <button class="button" type="button">Продолжить покупки</button>
         </div>
     </div>
 
-</body></html>
+</body>
+
+</html>
