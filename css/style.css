@@ -1676,10 +1676,21 @@ footer ul {
 }
 
 .filter-input-checkbox:checked + label::before {
-
     background-image: url("../img/checkbox-on.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+}
+
+.filter-input-checkbox:disabled + label::before {
+    opacity: 0.3;
+}
+
+.filter-input-checkbox:hover + label::before {
+    filter: brightness(85%);
+}
+
+.filter-input-checkbox:disabled + label {
+    opacity: 0.4;
 }
 
 .filter-input-radio + label::before {
@@ -1696,6 +1707,18 @@ footer ul {
 
 .filter-input-radio:checked + label::before {
     background-image: url("../img/radio-on.svg");
+}
+
+.filter-input-radio:disabled + label::before {
+    opacity: 0.3;
+}
+
+.filter-input-radio:hover + label::before {
+    filter: brightness(85%);
+}
+
+.filter-input-radio:disabled + label {
+    opacity: 0.4;
 }
 
 .filter-button {
@@ -1741,8 +1764,12 @@ footer ul {
     text-decoration-color: var(--basic-red);
     color: var(--basic-black);
     opacity: 0.3;
-    margin-right: 16px;
+    margin-right: 65px;
 }
+.sorter:nth-child(4) {
+    margin-right: 0;
+}
+
 
 .sorter:hover {
     text-decoration-style: solid;
@@ -1766,6 +1793,13 @@ footer ul {
     fill: #231F20;
 }
 
+.up {
+    margin-left: auto;
+    margin-right: 21px;
+}
+.down {
+    margin-right: 17px;
+}
 .active-svg {
     opacity: 1;
 }
