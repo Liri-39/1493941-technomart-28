@@ -1515,6 +1515,7 @@ footer ul {
     width: 8px;
     height: 12px;
     display: inline-block;
+    vertical-align: top;
     background: url('../img/icon-right-small.svg') no-repeat center;
     padding-left: 15px;
     padding-right: 17px;
@@ -2107,6 +2108,7 @@ footer ul {
     background: var(--rare-color-grey);
     padding: 38px 113px 35px;
 }
+
 .contact-form .buttons-field {
     padding: 37px 80px;
 }
