@@ -643,25 +643,26 @@ header li {
 }
 
 .blue {
-    background: var(--special-blue) url('../img/icon-2.svg') no-repeat 85% 55%;
+    background: var(--special-blue) url('../img/icon-2.svg') no-repeat 86% 55%;
 }
 
 .berry {
-    background: var(--special-purple) url('../img/icon-3.svg') no-repeat 85% 55%;
+    background: var(--special-purple) url('../img/icon-3.svg') no-repeat 86% 52%;
 }
 
 .green {
-    background: var(--special-mint) url('../img/icon-4.svg') no-repeat 85% 55%;
+    background: var(--special-mint) url('../img/icon-4.svg') no-repeat 81% 55%;
 }
 
 .orange:last-child {
     background-image: url('../img/icon-5.svg');
+    background-position: 86% 52%;
 }
 
 .promo-menu li a,
 .promo-action li a {
     width: 49%;
-    margin-bottom: 21px;
+    margin-bottom: 22px;
     padding: 10px 0px;
     background: rgba(255, 255, 255, 0.3);
     font-weight: normal;
@@ -724,7 +725,7 @@ header li {
 
 .slider .right {
     background: url(../img/icon-right.svg) no-repeat;
-    background-position-x: center;
+    background-position-x: 59%;
     background-position-y: 54%;
     position: absolute;
     right: 0px;
@@ -748,6 +749,7 @@ header li {
 
 .slide img {
     width: 100%;
+    display: block;
 }
 
 .slide-text {
@@ -784,8 +786,8 @@ header li {
     position: absolute;
     bottom: 27px;
     left: 0;
-    padding: 11px 46px 9px 46px;
-    margin-left: 24px;
+    padding: 12px 46px 9px 46px;
+    margin-left: 25px;
     line-height: 18px;
     font-weight: 400;
     font-size: 14px;
@@ -795,7 +797,7 @@ header li {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 53px;
+    bottom: 31px;
     width: 100%;
 }
 
@@ -836,7 +838,7 @@ header li {
 }
 
 .goods-title h2 {
-    margin-top: 29px;
+    margin-top: 28px;
     margin-left: 28px;
     margin-bottom: 30px;
     color: var(--basic-dark);
@@ -844,7 +846,7 @@ header li {
 }
 
 .goods-title .button-red {
-    padding: 11px 24px 9px 24px;
+    padding: 12px 25px 9px 24px;
     margin-right: 14px;
     font-size: 14px;
     line-height: 18px;
@@ -2026,13 +2028,19 @@ footer ul {
 
 .button-close {
     position: absolute;
-    top: 11px;
+    top: 15px;
     right: 11px;
     background-color: transparent;
     border: none;
     margin: 0;
     padding: 0;
     transition: all 0.4s ease-in-out;
+    z-index: 3;
+}
+
+.button-close:focus {
+    outline: none;
+    border: none;
 }
 
 .notice {
@@ -2061,7 +2069,7 @@ footer ul {
     align-self: flex-end;
     width: 100%;
     background: #F1F1F1;
-    padding: 37px 80px;
+    padding: 38px 113px 35px;
 }
 
 .notice-basket *:focus {
@@ -2077,7 +2085,8 @@ footer ul {
     text-transform: uppercase;
     color: var(--basic-black);
     font-size: 14px;
-    line-height: 38px;
+    line-height: 18px;
+    min-height: 38px;
     border: none;
     cursor: pointer;
 }
@@ -2131,6 +2140,11 @@ footer ul {
 }
 
 .bigmap iframe {
+    z-index: 2;
+}
+
+
+.bigmap iframe {
     border: none;
 }
 
@@ -2140,8 +2154,8 @@ footer ul {
     height: 430px;
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
-    border-top: 7px solid var(--basic-red);
-    padding-top: 46px;
+    border-top: 6px solid var(--basic-red);
+    padding-top: 41px;
 
 }
 
@@ -2170,6 +2184,7 @@ footer ul {
     border: 2px solid #C5C5C5;
     border-radius: 2px;
     padding-left: 12px;
+    margin-top: 11px;
 }
 
 .contact-form input::-webkit-input-placeholder,
@@ -2216,6 +2231,7 @@ footer ul {
     resize: none;
     padding-left: 12px;
     padding-top: 7px;
+    margin-top: 5px;
 }
 
 .contact-form .button-red {
@@ -2226,7 +2242,7 @@ footer ul {
 .contact-form label {
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: 11px;
+    margin-left: 1px;
 }
 
 /* Animations */
