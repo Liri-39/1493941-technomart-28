@@ -116,11 +116,11 @@
                                 </div>
                                 <div class="price-controls">
                                     <label>
-                                        <input class="min-price" type="text" name="min-price" value="0">
+                                        <input class="min-price" type="text" name="min-price" pattern="[0-9]" value="0">
                                     </label>
                                     <span>—</span>
                                     <label>
-                                        <input class="max-price" type="text" name="max-price" value="30000">
+                                        <input class="max-price" type="text" name="max-price" pattern="[0-9]" value="30000">
                                     </label>
                                 </div>
                             </div>
@@ -164,7 +164,6 @@
                                     <label for="supply1">Аккумуляторные</label>
                                 </li>
                                 <li class="filter-option filter-radio">
-
                                     <input class="visually-hidden filter-input-radio filter-input" type="radio" id="supply2" name="supply" value="2">
                                     <label for="supply2">Сетевые</label>
                                 </li>
@@ -317,7 +316,7 @@
                             </a>
                             <div class="goods-item-action">
                                 <a class="goods-item-action-button green-button " href="">Купить</a>
-                                <a class="goods-item-action-button green-button-bookmark" href="">В закладки</a>
+                                <a class="goods-item-action-button green-button-bookmark " href="">В закладки</a>
                             </div>
                         </li>
                     </ul>
