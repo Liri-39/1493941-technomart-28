@@ -757,6 +757,7 @@ a.header-middle-phone {
     background: url(../img/icon-left.svg) no-repeat;
     background-position: 50% 54%;
     position: absolute;
+    border: none;
     cursor: pointer;
     width: 70px;
     height: 266px;
@@ -767,6 +768,7 @@ a.header-middle-phone {
     background: url(../img/icon-right.svg) no-repeat;
     background-position: 59% 54%;
     position: absolute;
+    border: none;
     right: 0px;
     top: 0px;
     width: 70px;
@@ -843,6 +845,8 @@ a.header-middle-phone {
 }
 
 .indicator {
+    padding: 0;
+    border: 2px solid var(--basic-white);
     display: block;
     border-radius: 50%;
     width: 9px;
